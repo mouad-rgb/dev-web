@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Riot Games: League of Legends, Valorant, team games, shooting games and strategy games"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/moncss.css" />
+    <title>Riot games</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm fixed-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            id="riot"
+            src="img/Riot_Mobile_logo.webp"
+            width="50"
+            class="rounded"
+            alt="riot games"
+          />
+        </a>
+
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item">
+            <a class="nav-link lienNav" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link lienNav"
+              href="#"
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"
+              >Se connecter</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link lienNav" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link lienNav lienNavD" href="#">Download</a>
+          </li>
+        </ul>
+
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#settingsSidebar"
+          aria-controls="settingsSidebar"
+        >
+          <img src="img/menu.png" width="25px" alt="" />
+        </button>
+      </div>
+    </nav>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">SE CONNECTER</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <form id="loginForm" novalidate>
+              <div class="mb-3">
+                <label for="loginUsername" class="form-label">Username</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="loginUsername"
+                  autocomplete="username"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="loginPassword"
+                  autocomplete="current-password"
+                  required
+                />
+              </div>
+
+              <p id="loginError" class="text-danger small mb-0 d-none">
+                Please fill in both fields.
+              </p>
+            </form>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" id="loginBtn" class="btn btn-danger">
+              Log in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="settingsSidebar"
+      aria-labelledby="settingsTitle"
+    >
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title h1" id="settingsTitle">Settings</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <a href="#" class="lienSide">Account</a>
+        <a href="#" class="lienSide">Security</a>
+        <a href="#" class="lienSide">Support</a>
+      </div>
+    </div>
+
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/lol.jpg"
+            alt="League of Legends"
+            class="d-block w-100"
+          />
+        </div>
+        <div class="carousel-item">
+          <img src="img/valo.jpg" alt="valorant" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/tft.jpg"
+            alt="team fight tactics"
+            class="d-block w-100"
+          />
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <section class="bloc bloc-clair">
+      <div class="container-fluid px-4">
+        <h1 class="display-1">Actualites</h1>
+        <div class="row g-3">
+          <!-- League of Legends -->
+          <div class="col-12 col-md-4">
+            <div class="card riot-card text-white border-0">
+              <img
+                src="img/knowmyname_lol.jpg"
+                class="card-img"
+                alt="League of Legends Know My Name song"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end"
+              >
+                <h5 class="card-title">League of Legends</h5>
+                <p class="card-text">
+                  Know My Name: Music video is OUT on Youtube.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card riot-card text-white border-0">
+              <img
+                src="img/vct.jpg"
+                class="card-img"
+                alt="Team celebrating with the VCT trophy"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end"
+              >
+                <h5 class="card-title">VCT</h5>
+                <p class="card-text">
+                  Valorant Champions Tour: LOUD are named champions.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Worlds -->
+          <div class="col-12 col-md-4">
+            <div class="card riot-card text-white border-0">
+              <img
+                src="img/worlds.jpg"
+                class="card-img img-top-focus"
+                alt="Worlds 26 at the Barclays Center"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-end"
+              >
+                <h5 class="card-title">Worlds 26</h5>
+                <p class="card-text">
+                  The biggest League of Legends event start on 15 october.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Games -->
+    <section class="bloc bloc-sombre">
+      <div class="container">
+        <h1 class="display-1">Our Games</h1>
+        <div id="gamesAccordion">
+          <!-- League of Legends -->
+          <div class="card game-card">
+            <div class="card-header p-0">
+              <button
+                class="btn game-btn w-100"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseLol"
+                aria-expanded="true"
+                aria-controls="collapseLol"
+              >
+                <img src="img/logol.png" alt="" class="game-logo" />
+                <span>League of Legends</span>
+              </button>
+            </div>
+            <div
+              id="collapseLol"
+              class="collapse show"
+              data-bs-parent="#gamesAccordion"
+            >
+              <div class="card-body">
+                <div class="row align-items-center g-3">
+                  <div class="col-12 col-md-9">
+                    <p>
+                      League of Legends is a team-based strategy game where two
+                      teams of five champions battle to destroy the enemy Nexus.
+                      Choose from over 160 champions, each with their own
+                      abilities and playstyle, and take on a role such as top,
+                      jungle, mid, bot or support. Every match is different,
+                      mixing quick decisions, coordination and mastery of your
+                      champion. Play casually with friends or climb the ranked
+                      ladder and compete at the highest level.
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <div class="d-grid gap-2">
+                      <p class="mb-0">Download:</p>
+                      <a href="#" class="btn btn-danger"
+                        ><img
+                          src="img/icons8-windows-50.png"
+                          width="30px"
+                          alt=""
+                        />Windows</a
+                      >
+                      <a href="#" class="btn btn-danger"
+                        ><img
+                          src="img/icons8-macos-50.png"
+                          width="30px"
+                          alt=""
+                        />macOS</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Valorant -->
+          <div class="card game-card">
+            <div class="card-header p-0">
+              <button
+                class="btn game-btn w-100 collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseValo"
+                aria-expanded="false"
+                aria-controls="collapseValo"
+              >
+                <img src="img/logov.png" alt="" class="game-logo" />
+                <span>Valorant</span>
+              </button>
+            </div>
+            <div
+              id="collapseValo"
+              class="collapse"
+              data-bs-parent="#gamesAccordion"
+            >
+              <div class="card-body">
+                <div class="row align-items-center g-3">
+                  <div class="col-12 col-md-9">
+                    <p>
+                      Valorant is a tactical 5v5 shooter where precise gunplay
+                      meets unique agent abilities. Each round, one team attacks
+                      and tries to plant the Spike while the other defends the
+                      site. Every agent brings their own tools, from smokes and
+                      flashes to traps and ultimates, so teamwork and smart
+                      strategy matter as much as aim. Win rounds, manage your
+                      economy, and be the first team to take the match.
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <div class="d-grid gap-2">
+                      <p class="mb-0">Download:</p>
+                      <a href="#" class="btn btn-danger"
+                        ><img
+                          src="img/icons8-windows-50.png"
+                          width="30px"
+                          alt=""
+                        />Windows</a
+                      >
+                      <a href="#" class="btn btn-danger"
+                        ><img
+                          src="img/icons8-macos-50.png"
+                          width="30px"
+                          alt=""
+                        />macOS</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TFT -->
+          <div class="card game-card">
+            <div class="card-header p-0">
+              <button
+                class="btn game-btn w-100 collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTft"
+                aria-expanded="false"
+                aria-controls="collapseTft"
+              >
+                <img
+                  src="img/logot.png"
+                  alt=""
+                  class="game-logo"
+                  width="50px"
+                />
+                <span>Teamfight Tactics</span>
+              </button>
+            </div>
+            <div
+              id="collapseTft"
+              class="collapse"
+              data-bs-parent="#gamesAccordion"
+            >
+              <div class="card-body">
+                <div class="row align-items-center g-3">
+                  <div class="col-12 col-md-9">
+                    <p>
+                      Teamfight Tactics is a strategy auto-battler where you
+                      face seven other players in a battle to be the last one
+                      standing. Recruit champions from a shared pool, combine
+                      them into powerful teams, and place them on the board to
+                      fight automatically. Each round you adapt to what you find
+                      in the shop, the items you receive and your opponents'
+                      choices. With new sets and mechanics regularly, no two
+                      games are ever the same.
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <div class="d-grid gap-2">
+                      <p class="mb-0">Download:</p>
+                      <a href="#" class="btn btn-danger"
+                        ><img
+                          src="img/icons8-windows-50.png"
+                          width="30px"
+                          alt=""
+                        />Windows</a
+                      >
+                      <a href="#" class="btn btn-danger"
+                        ><img
+                          src="img/icons8-macos-50.png"
+                          width="30px"
+                          alt=""
+                        />macOS</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wild Rift -->
+          <div class="card game-card">
+            <div class="card-header p-0">
+              <button
+                class="btn game-btn w-100 collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseWild"
+                aria-expanded="false"
+                aria-controls="collapseWild"
+              >
+                <img src="img/logof.png" alt="" class="game-logo" />
+                <span>Wild Rift</span>
+              </button>
+            </div>
+            <div
+              id="collapseWild"
+              class="collapse"
+              data-bs-parent="#gamesAccordion"
+            >
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-12 col-md-9">
+                    <p>
+                      Wild Rift is the League of Legends experience rebuilt for
+                      mobile and console. You still play 5v5 matches to destroy
+                      the enemy Nexus, but with touch controls, a streamlined
+                      map and games that last around 15 to 20 minutes. It is
+                      perfect for quick sessions on the go while keeping the
+                      depth of champions, roles and teamwork. Play with friends
+                      anywhere and climb the ranks from your phone.
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <div class="d-grid gap-2">
+                      <p class="mb-0">Download:</p>
+                      <a href="#" class="btn btn-danger"
+                        ><img
+                          src="img/icons8-windows-50.png"
+                          width="30px"
+                          alt=""
+                        />Windows</a
+                      >
+                      <a href="#" class="btn btn-danger"
+                        ><img
+                          src="img/icons8-macos-50.png"
+                          width="30px"
+                          alt=""
+                        />macOS</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Riot recrute -->
+    <section class="bloc bloc-clair">
+      <div class="container-fluid px-4">
+        <h1 class="display-1">Riot recrute !</h1>
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-md-4 text-center">
+            <p class="lead mb-3">
+              Rejoignez notre équipe et faites partie de l'aventure !
+            </p>
+            <div class="d-flex flex-column align-items-center gap-2">
+              <button type="button" class="btn btn-riot">
+                <strong>175</strong>
+                <br />Postes à pourvoir
+              </button>
+              <button type="button" class="btn btn-riot">
+                <strong>24</strong> <br />Bureaux
+              </button>
+              <button type="button" class="btn btn-offres rounded-pill">
+                Voir les offres
+              </button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-8 text-center">
+            <img
+              src="img/anniework.jpg"
+              alt="Riot recrute"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="riot-footer mt-0 py-5 text-light">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Logo + short text -->
+          <div class="col-12 col-md-4">
+            <img
+              src="img/Riot_Mobile_logo.webp"
+              alt="Riot Games"
+              width="50"
+              class="mb-3"
+            />
+            <p class="small mb-0">
+              Riot Games: League of Legends, Valorant, Teamfight Tactics and
+              Wild Rift.
+            </p>
+          </div>
+
+          <!-- Games -->
+          <div class="col-6 col-md-2">
+            <h6 class="text-uppercase fw-bold mb-3">Games</h6>
+            <ul class="list-unstyled small">
+              <li><a href="#">League of Legends</a></li>
+              <li><a href="#">Valorant</a></li>
+              <li><a href="#">Teamfight Tactics</a></li>
+              <li><a href="#">Wild Rift</a></li>
+            </ul>
+          </div>
+
+          <!-- Company -->
+          <div class="col-6 col-md-3">
+            <h6 class="text-uppercase fw-bold mb-3">Company</h6>
+            <ul class="list-unstyled small">
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms of use</a></li>
+            </ul>
+          </div>
+
+          <!-- Social -->
+          <div class="col-12 col-md-3">
+            <h6 class="text-uppercase fw-bold mb-3">Follow us</h6>
+            <div class="d-flex gap-2 flex-wrap">
+              <a href="#" class="btn btn-riot btn-sm">X</a>
+              <a href="#" class="btn btn-riot btn-sm">YouTube</a>
+              <a href="#" class="btn btn-riot btn-sm">Instagram</a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <p class="text-center small mb-0">
+          &copy; 2026 Riot Games by Mouad Kouzmane. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/monjs.js"></script>
+  </body>
+</html>

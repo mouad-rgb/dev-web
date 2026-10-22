@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/moncss.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <title>Profile - Riot Games</title>
+  </head>
+  <body class="background">
+    <nav class="navbar navbar-expand-sm fixed-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            id="riot"
+            src="img/Riot_Mobile_logo.webp"
+            width="50"
+            class="rounded"
+            alt="riot games"
+          />
+        </a>
+
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item">
+            <a class="nav-link lienNav" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link lienNav" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link lienNav" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link lienNav lienNavD" href="#">Download</a>
+          </li>
+        </ul>
+
+        <button
+          class="btn btn-danger"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#settingsSidebar"
+          aria-controls="settingsSidebar"
+        >
+          <img src="img/menu.png" width="25px" alt="" />
+        </button>
+      </div>
+    </nav>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="settingsSidebar"
+      aria-labelledby="settingsTitle"
+    >
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title h1" id="settingsTitle">Settings</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <a href="#" class="lienSide">Account</a>
+        <a href="#" class="lienSide">Security</a>
+        <a href="#" class="lienSide">Support</a>
+      </div>
+    </div>
+
+    <section class="bloc" style="padding-top: 120px">
+      <div class="container">
+        <div class="riot-id-card row g-0">
+          <div class="col-12 col-md-5 panneau-gauche">
+            <h2>Profile</h2>
+            <p>
+              Your profile is used by players to find you through the social
+              panel in our games.
+            </p>
+          </div>
+
+          <div class="col-12 col-md-7 panneau-droite">
+            <form class="d-flex flex-column h-100">
+              <div class="row g-3">
+                <div class="col-12 col-sm-6">
+                  <div class="champ-id">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" readonly />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="champ-id">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" readonly />
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="champ-id">
+                    <label for="level">Level</label>
+                    <input type="text" id="level" name="level" readonly />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-auto text-end pt-5">
+                <button type="button" class="btn-save" disabled>
+                  Save changes
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="riot-footer mt-0 py-5 text-light">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Logo + short text -->
+          <div class="col-12 col-md-4">
+            <img
+              src="img/Riot_Mobile_logo.webp"
+              alt="Riot Games"
+              width="50"
+              class="mb-3"
+            />
+            <p class="small mb-0">
+              Riot Games: League of Legends, Valorant, Teamfight Tactics and
+              Wild Rift.
+            </p>
+          </div>
+
+          <!-- Games -->
+          <div class="col-6 col-md-2">
+            <h6 class="text-uppercase fw-bold mb-3">Games</h6>
+            <ul class="list-unstyled small">
+              <li><a href="#">League of Legends</a></li>
+              <li><a href="#">Valorant</a></li>
+              <li><a href="#">Teamfight Tactics</a></li>
+              <li><a href="#">Wild Rift</a></li>
+            </ul>
+          </div>
+
+          <!-- Company -->
+          <div class="col-6 col-md-3">
+            <h6 class="text-uppercase fw-bold mb-3">Company</h6>
+            <ul class="list-unstyled small">
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Terms of use</a></li>
+            </ul>
+          </div>
+
+          <!-- Social -->
+          <div class="col-12 col-md-3">
+            <h6 class="text-uppercase fw-bold mb-3">Follow us</h6>
+            <div class="d-flex gap-2 flex-wrap">
+              <a href="#" class="btn btn-riot btn-sm">X</a>
+              <a href="#" class="btn btn-riot btn-sm">YouTube</a>
+              <a href="#" class="btn btn-riot btn-sm">Instagram</a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <p class="text-center small mb-0">
+          &copy; 2026 Riot Games by Mouad Kouzmane. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/monjs.js"></script>
+  </body>
+</html>

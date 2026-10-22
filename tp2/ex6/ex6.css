@@ -1,0 +1,52 @@
+.menu {
+  width: 220px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.35);
+  -webkit-backdrop-filter: blur(10px); /* Safari */
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s ease;
+}
+
+.titre {
+  background-color: #333;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  user-select: none; /* évite de sélectionner le texte en cliquant */
+}
+
+#fleche {
+  transition: transform 0.3s;
+}
+.menu.ouvert #fleche {
+  transform: rotate(180deg); /* la flèche se retourne */
+}
+
+.contenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 0; /* fermé par défaut */
+  overflow: hidden;
+  transition: max-height 0.4s ease; /* c'est ça qui anime */
+}
+.menu.ouvert .contenu {
+  max-height: 300px; /* doit être >= à la hauteur réelle du contenu */
+}
+
+.contenu li a {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: #333;
+}
+.contenu li a:hover {
+  background-color: #eee;
+}

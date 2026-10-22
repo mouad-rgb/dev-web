@@ -1,0 +1,12 @@
+#menu a {
+  margin-right: 10px;
+}
+#menu.mobile {
+  display: flex;
+  flex-direction: column; /* menu en colonne sur petit écran */
+}
+#pub {
+  border: 1px solid gray;
+  padding: 10px;
+  margin-top: 20px;
+}

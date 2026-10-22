@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Somme des temps</title>
+  </head>
+  <body>
+    <form id="form">
+      Entrer le premier temps :<br />
+      Heure(s) <input type="number" id="h1" min="0" /> Minute(s)
+      <input type="number" id="m1" min="0" /> Seconde(s)
+      <input type="number" id="s1" min="0" /><br />
+
+      Entrer le Deuxième temps :<br />
+      Heure(s) <input type="number" id="h2" min="0" /> Minute(s)
+      <input type="number" id="m2" min="0" /> Seconde(s)
+      <input type="number" id="s2" min="0" /><br />
+
+      Entrer le troisième temps :<br />
+      Heure(s) <input type="number" id="h3" min="0" /> Minute(s)
+      <input type="number" id="m3" min="0" /> Seconde(s)
+      <input type="number" id="s3" min="0" /><br />
+
+      Total des trois temps :<br />
+      Jour(s) <input type="text" id="jours" readonly /> Heure(s)
+      <input type="text" id="heures" readonly /> Minute(s)
+      <input type="text" id="minutes" readonly /> Seconde(s)
+      <input type="text" id="secondes" readonly /><br />
+
+      <div style="text-align: center">
+        <button type="button" id="somme">Somme</button>
+        <button type="reset">Effacer</button>
+      </div>
+    </form>
+    <script src="ex4.js"></script>
+  </body>
+</html>

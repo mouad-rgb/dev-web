@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(219, 219, 219);
+}
+
+.body {
+  background-color: black;
+  border-radius: 20px;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+#answer {
+  color: white;
+  font-family: monospace;
+  background-color: rgb(63, 65, 63);
+  border-radius: 10px;
+  border: none;
+  margin: 20px;
+  width: 90%;
+  height: 120px; /* same height as your old input, adjust to match */
+  box-sizing: border-box;
+  font-size: 50px; /* smaller, so two lines fit in that height */
+  line-height: 1.1;
+  resize: none; /* removes the drag handle so the size can't change */
+  overflow: hidden;
+}
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  background-color: hsl(0, 0%, 50%);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 50px;
+  font-family: monospace;
+  cursor: pointer;
+  transition: 0.3;
+}
+
+button:hover {
+  filter: brightness(1.3);
+}
+
+.yellow {
+  background-color: orange;
+}
