@@ -1,0 +1,36 @@
+#riot{
+    border-radius:25px ;
+}
+
+.lienNav{
+    font-size: 25px;
+    margin-right: 30px;
+    color: hsl(0, 74%, 64%);
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+.lienNav:hover{
+    color: hsl(0, 73%, 38%);
+}
+
+.lienNavD:hover{
+    color: hsl(0, 73%, 38%);
+    background-color:hsla(0, 2%, 24%, 0.932) ;
+}
+
+.btn_settings{
+    width: 150px;
+    font-size: 25px;
+}
+
+.lienSide{
+    font-size: 25px;
+  
+    color: hsl(0, 0%, 0%);
+    transition: 0.3s;
+}
+
+.lienSide:hover{
+    color: hsl(0, 73%, 38%);
+}
